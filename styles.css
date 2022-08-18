@@ -37,10 +37,9 @@ img {
 .headline {
   display: flex;
   flex-direction: column;
-  gap: 58px;
+  /* gap: 15px; */
   align-items: center;
   padding: 64px 24px;
-  position: absolute;
   background: url(images/header-illsutration-mobile@2x.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -73,14 +72,25 @@ img {
   color: #172b4d;
 }
 
-a .icons .icon-img {
+.icons{
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0;
+  margin: 0;
   width: 170.17px;
   height: 20px;
-  top: 536px;
-  left: 102.42px;
+  position: relative;
+  padding-top: 3rem;
 }
 
-a .action-button {
+.icon-item {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.action-button {
   width: 327px;
   height: 48px;
   top: 614px;
