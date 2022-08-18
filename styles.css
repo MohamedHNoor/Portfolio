@@ -1,0 +1,97 @@
+html {
+  font-size: 100%;
+  line-height: 1.5rem;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  min-height: 100vh;
+  max-width: 1400vw;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+/* toolbar */
+.header-nav {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  padding: 1.5rem;
+}
+
+.headline {
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 1.5rem;
+  background: url(images/header-illsutration-mobile@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.headline-title {
+  font-family: inherit;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+  text-align: center;
+  width: 327px;
+  height: 192px;
+  color: #172b4d;
+}
+
+.headline-title span {
+  color: #36b37e;
+  text-align: center;
+}
+
+.headline-subtitle {
+  width: 327px;
+  height: 164px;
+  font-family: inherit;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  text-align: center;
+  color: #172b4d;
+}
+
+.icons {
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 170.17px;
+  height: 20px;
+  padding-top: 3rem;
+}
+
+.icon-item {
+  margin-top: 3rem;
+}
+
+.action-button {
+  width: 327px;
+  height: 48px;
+  top: 38.375rem;
+  left: 1.5rem;
+  padding-top: 4rem;
+}
