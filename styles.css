@@ -24,9 +24,12 @@ img {
   display: block;
 }
 
+.flex {
+  display: flex;
+}
+
 /* toolbar */
 .header-nav {
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
@@ -35,9 +38,7 @@ img {
 }
 
 .headline {
-  display: flex;
   flex-direction: column;
-  /* gap: 15px; */
   align-items: center;
   padding: 4rem 1.5rem;
   background: url(images/header-illsutration-mobile@2x.png);
@@ -74,7 +75,6 @@ img {
 
 .icons{
   list-style: none;
-  display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 0;
