@@ -1,89 +1,89 @@
 html {
-        font-size: 100%;
-        line-height: 1.5rem;
-        box-sizing: border-box;
-        font-family: 'Inter', sans-serif;
+  font-size: 100%;
+  line-height: 1.5rem;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
-        margin: 0 auto;
-        padding: 0;
-        min-height: 100vh;
-        max-width: 1400px;
+  margin: 0 auto;
+  padding: 0;
+  min-height: 100vh;
+  max-width: 1400px;
 }
 
 *,
 *::before,
 *::after {
-        box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 img {
-        max-width: 100%;
-        height: auto;
-        display: block;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* toolbar */
 .header-nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        overflow: hidden;
-        padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  padding: 25px;
 }
 
 .headline {
-        display: flex;
-        flex-direction: column;
-        gap: 58px;
-        align-items: center;
-        padding: 64px 24px;
-        position: absolute;
-        background: url(images/header-illsutration-mobile@2x.png);
-        background-size: cover;
-        background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  gap: 58px;
+  align-items: center;
+  padding: 64px 24px;
+  position: absolute;
+  background: url(images/header-illsutration-mobile@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .headline-title {
-        font-family: inherit;
-        font-size: 40px;
-        font-weight: 700;
-        line-height: 52px;
-        text-align: center;
-        width: 327px;
-        height: 192px;
-        color: #172B4D;
+  font-family: inherit;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  text-align: center;
+  width: 327px;
+  height: 192px;
+  color: #172B4D;
 }
 
 .headline-title span {
-        color: #36B37E;
-        text-align: center;
+  color: #36B37E;
+  text-align: center;
 }
 
 .headline-subtitle {
-        width: 327px;
-        height: 164px;
-        font-family: inherit;
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 28px;
-        text-align: center;
-        color: #172B4D;
+  width: 327px;
+  height: 164px;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  color: #172B4D;
 }
 
 a .icons .icon-img {
-        width: 170.17px;
-        height: 20px;
-        top: 536px;
-        left: 102.42px;
+  width: 170.17px;
+  height: 20px;
+  top: 536px;
+  left: 102.42px;
 }
 
 a .action-button {
-        width: 327px;
-        height: 48px;
-        top: 614px;
-        left: 24px;
-        padding-top: 50px;
+  width: 327px;
+  height: 48px;
+  top: 614px;
+  left: 24px;
+  padding-top: 50px;
 }
