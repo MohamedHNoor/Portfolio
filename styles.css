@@ -176,7 +176,7 @@ li {
 button {
   background: #36b37f;
   border-radius: 4px;
-  color: #fff;
+  color: #fff !important;
   padding: 12px;
   font-weight: 500;
   font-size: 17px;
