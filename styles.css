@@ -305,3 +305,7 @@ button:enabled {
   align-items: flex-end;
   gap: 0.5rem;
 }
+
+.skills-card {
+  margin-bottom: 3rem;
+}
