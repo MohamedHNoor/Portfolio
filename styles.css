@@ -146,23 +146,39 @@ li {
 }
 
 .box {
-  width: 327px;
-  height: 195px;
+  width: 345px;
+  height: 245px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+border-radius: 0.5rem;
 }
 
 .tags {
   display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+  align-items: center;
+  width: 305px;
+  height: 32px;
+  padding: 0;
+  gap: 6px;
 }
 
 .tag-item {
   margin-right: 0.5rem;
   list-style: none;
   text-decoration: none;
-  font-size: 14px;
-  padding: 2px 4px;
+  padding: 7px;
   background: #ebf0ee;
   border-radius: 4px;
+  color: #3A4A42;
+  font-weight: 600;
+  font-size: 12px;
 }
 
 .project-title {
@@ -182,7 +198,11 @@ button {
   font-size: 17px;
   line-height: 24px;
   border: none;
-}
+  width: 122px;
+  height: 48px;
+  margin-bottom: 27px;
+  align-self: center;
+  }
 
 button:hover {
   background: #36b37f;
