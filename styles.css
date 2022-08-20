@@ -225,6 +225,7 @@ button:enabled {
 
 .title-card {
   text-align: center;
+  background: url(images/about-me-mobile1.png) top right no-repeat, url(images/about-me-\ mobile.png);
 }
 
 .about-me-title {
@@ -250,6 +251,9 @@ button:enabled {
 
 .about-me-btn {
   margin-top: 2rem;
+  width: 159px;
+  height: 48px;
+  text-align: center;
 }
 
 .about-me {
