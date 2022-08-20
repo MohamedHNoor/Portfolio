@@ -185,11 +185,20 @@ button {
 }
 
 button:hover {
-  background-color: rgb(172, 165, 165);
+  background: #36b37f;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  border-radius: 4px;
+}
+
+button:active {
+  background: #0a2759;
+  border-radius: 4px;
 }
 
 button:enabled {
-  color: #172b4d;
+  color: #fff;
+  border-radius: 4px;
+  border-radius: 4px;
  }
 
 /* about section */
