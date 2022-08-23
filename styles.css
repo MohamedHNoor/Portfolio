@@ -308,7 +308,7 @@ button:enabled {
 
 .about-me-tags li:nth-child(2) {
   width: 105px;
- }
+}
 
 .skills-card {
   margin-bottom: 3rem;
@@ -378,6 +378,10 @@ textarea {
   background: #36b37f;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.btn:hover {
+  background: #008552;
 }
 
 .form-section .icons {
