@@ -380,6 +380,10 @@ textarea {
   cursor: pointer;
 }
 
+.btn:hover {
+  background: #008552;
+}
+
 .form-section .icons {
   display: flex;
   margin: 0 auto;
