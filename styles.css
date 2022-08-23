@@ -7,7 +7,7 @@ html {
   font-size: 100%;
   line-height: 1.5rem;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 body {
@@ -115,7 +115,7 @@ li {
 .work-heading > h2 {
   width: 327px;
   height: 97px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -153,7 +153,7 @@ li {
   flex-direction: column;
   align-content: center;
   justify-content: center;
-border-radius: 0.5rem;
+  border-radius: 0.5rem;
 }
 
 .tags {
@@ -202,10 +202,10 @@ button {
   height: 48px;
   margin-bottom: 27px;
   align-self: center;
-  }
+}
 
 button:hover {
-  background: #36b37f;
+  background: #008552;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
   border-radius: 4px;
 }
@@ -219,7 +219,7 @@ button:enabled {
   color: #fff;
   border-radius: 4px;
   border-radius: 4px;
- }
+}
 
 /* about section */
 
@@ -229,7 +229,7 @@ button:enabled {
 }
 
 .about-me-title {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -239,7 +239,7 @@ button:enabled {
 }
 
 .about-me-subtitle {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -276,23 +276,21 @@ button:enabled {
 }
 
 .lang-title {
-    width: 337px;
-    font-size: 24px;
-    color: #344563;
+  width: 337px;
+  font-size: 24px;
+  color: #344563;
 }
 
 .tag-about-items {
-  margin-right: 0.25rem;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
   color: #36b37e;
-  width: 89px;
-  height: 40px;
+  width: 90px;
   letter-spacing: 0.03em;
-  padding: 12px;
+  padding: 0.75rem;
   background: #ffffff;
   border-radius: 8px;
 }
@@ -300,12 +298,106 @@ button:enabled {
 .about-me-tags {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  justify-content: flex-end;
-  align-content: flex-end;
-  align-items: flex-end;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
   gap: 0.5rem;
+  width: 90%;
+}
+
+.about-me-tags li:nth-child(2) {
+  width: 105px;
 }
 
 .skills-card {
+  margin-bottom: 3rem;
+}
+
+/* form section */
+.form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 24px;
+  gap: 24px;
+  width: 375px;
+  height: 879px;
+  align-content: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.form-container {
+  background: url(images/bg-img-contact-form.svg) bottom right;
+  background-repeat: no-repeat;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  gap: 24px;
+  width: 327px;
+  height: 330px;
+}
+
+.form-title {
+  width: 327px;
+  height: 363px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 327px;
+  height: 48px;
+  padding: 10px;
+}
+
+textarea {
+  width: 327px;
+  height: 114px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  width: 129px;
+  height: 48px;
+  background: #36b37f;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #008552;
+}
+
+.form-section .icons {
+  display: flex;
+  margin: 0 auto;
+}
+
+.my-email {
+  width: 375px;
+  height: 189px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526e;
+  text-decoration: none;
   margin-bottom: 3rem;
 }
