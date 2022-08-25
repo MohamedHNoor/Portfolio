@@ -36,8 +36,8 @@ li {
   display: flex;
   justify-content: space-between;
   padding: 1.5rem;
- }
- 
+}
+
 .headline {
   flex-direction: column;
   align-items: center;
@@ -222,7 +222,8 @@ button:enabled {
 /* about section */
 .title-card {
   text-align: center;
-  background: url(images/about-me-mobile1.png) top right no-repeat, url(images/about-me-\ mobile.png);
+  background: url(images/about-me-mobile1.png) top right no-repeat,
+    url(images/about-me-\ mobile.png);
 }
 
 .about-me-title {
@@ -328,7 +329,7 @@ button:enabled {
   width: 17%;
   position: absolute;
   right: 2px;
-  top: 6547px;  
+  top: 6547px;
 }
 
 .form-container form {
@@ -428,7 +429,7 @@ textarea {
   .headline-title {
     width: 920px;
     height: 114px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
@@ -440,14 +441,14 @@ textarea {
   .headline-subtitle {
     width: 700px;
     height: 96px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
     text-align: center;
     color: #172b4d;
-    margin-top: -30px
+    margin-top: -30px;
   }
   .work-container {
     display: flex;
@@ -455,12 +456,12 @@ textarea {
     align-items: center;
     padding: 80px 0px;
     gap: 48px;
-    width: 90% 
+    width: 90%;
   }
   .work-heading > h2 {
     width: 450px;
     height: 48px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -506,7 +507,7 @@ textarea {
   .about-me-subtitle {
     width: 920px;
     height: 96px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -533,16 +534,17 @@ textarea {
     height: 490px;
     justify-content: center;
     align-items: flex-start;
-    background: url(images/left-form-bg-img.svg) bottom left, url(images/left-center-form-bg-img.svg) bottom center , url(images/right-form-bg-img.svg) bottom right;
+    background: url(images/left-form-bg-img.svg) bottom left,
+      url(images/left-center-form-bg-img.svg) bottom center,
+      url(images/right-form-bg-img.svg) bottom right;
     background-repeat: no-repeat;
     background-position: cover;
-
   }
 
   .form-title {
     width: 463px;
     height: 256px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
@@ -550,7 +552,7 @@ textarea {
     display: flex;
     align-items: center;
     color: #172b4d;
-    align-items: flex-start
+    align-items: flex-start;
   }
   .form {
     display: flex;
@@ -559,12 +561,12 @@ textarea {
     justify-content: flex-start;
     height: 330px;
   }
-  .desktop{
+  .desktop {
     margin: 0;
     align-self: flex-start;
   }
 
-  .my-email{
+  .my-email {
     display: none;
   }
   .form-bg-img1 {
@@ -575,7 +577,7 @@ textarea {
     width: 100%;
     border-top: 1px solid gray;
     position: absolute;
-    height: 72px; 
+    height: 72px;
   }
 
   ul.icons {
@@ -587,7 +589,8 @@ textarea {
     height: 40px;
     margin: 0 auto;
   }
-  .logo, .nav-menu {
+  .logo,
+  .nav-menu {
     display: none;
   }
 
@@ -611,5 +614,5 @@ textarea {
     list-style: none;
     font-size: 18px;
     color: #172b4d;
-  }   
+  }
 }
