@@ -20,18 +20,25 @@
   <body>
     <!-- Toolbar -->
     <header class="header">
-      <nav class="header-nav flex">
+      <div class="mobile-nav">
         <a href="#" class="logo">
           <img src="images/Welcome.png" alt="welcome logo" />
         </a>
         <a href="#" class="nav-menu">
           <img src="images/Union.png" alt="hamburger menu" />
         </a>
+      </div>
+      <nav class="desktop-nav" style="display: none;">
+        <ul class="desktop-menu">
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
       </nav>
     </header>
 
     <!-- Headline Section -->
-    <section class="headline flex">
+    <section class="headline flex container">
       <h1 class="headline-title">
         Hi there. I'm Mohamed<br /><span>I'm a software developer</span>
       </h1>
@@ -42,9 +49,6 @@
       </p>
 
       <!-- social media icons -->
-      <!-- <a href="#" class="icons">
-              <img class="icon-img" src="images/social-media-icons.png" alt="Social Media icons">
-          </a> -->
       <ul class="icons flex">
         <li class="icon-item">
           <a href="#"><img src="images/twitter.png" alt="" /></a>
@@ -70,100 +74,103 @@
     </section>
 
     <!-- work section -->
-    <section class="work-container">
+    <section class="work-container container">
       <div class="work-heading">
         <h2>My Recent Works</h2>
         <div class="line"></div>
       </div>
-      <div class="grid-container">
-        <div class="grid-card">
-          <div class="card-img"></div>
-          <div class="box">
-            <h3 class="project-title">Multi-Post Stories Gain+Glory</h3>
-            <ul class="tags">
-              <li class="tag-item">Ruby on rails</li>
-              <li class="tag-item">CSS</li>
-              <li class="tag-item">JavaScript</li>
-              <li class="tag-item">HTML</li>
-            </ul>
-            <button type="submit">See Project</button>
+      <div class="grid-container work-sub-container">
+        <div class="row1">
+          <div class="grid-card">
+            <div class="card-img"></div>
+            <div class="box">
+              <h3 class="project-title">Multi-Post Stories Gain+Glory</h3>
+              <ul class="tags">
+                <li class="tag-item">Ruby on rails</li>
+                <li class="tag-item">CSS</li>
+                <li class="tag-item">JavaScript</li>
+                <li class="tag-item">HTML</li>
+              </ul>
+              <button type="submit">See Project</button>
+            </div>
+          </div>
+  
+          <div class="grid-card">
+            <div class="card-img"></div>
+            <div class="box">
+              <h3 class="project-title">Multi-Post Stories Gain+Glory</h3>
+              <ul class="tags">
+                <li class="tag-item">Ruby on rails</li>
+                <li class="tag-item">CSS</li>
+                <li class="tag-item">JavaScript</li>
+                <li class="tag-item">HTML</li>
+              </ul>
+              <button type="submit">See Project</button>
+            </div>
+          </div>
+  
+          <div class="grid-card">
+            <div class="card-img"></div>
+            <div class="box">
+              <h3 class="project-title">Multi-Post Stories Gain+Glory</h3>
+              <ul class="tags">
+                <li class="tag-item">Ruby on rails</li>
+                <li class="tag-item">CSS</li>
+                <li class="tag-item">JavaScript</li>
+                <li class="tag-item">HTML</li>
+              </ul>
+              <button type="submit">See Project</button>
+            </div>
           </div>
         </div>
-
-        <div class="grid-card">
-          <div class="card-img"></div>
-          <div class="box">
-            <h3 class="project-title">Multi-Post Stories Gain+Glory</h3>
-            <ul class="tags">
-              <li class="tag-item">Ruby on rails</li>
-              <li class="tag-item">CSS</li>
-              <li class="tag-item">JavaScript</li>
-              <li class="tag-item">HTML</li>
-            </ul>
-            <button type="submit">See Project</button>
+        <div class="row2">
+          <div class="grid-card">
+            <div class="card-img"></div>
+            <div class="box">
+              <h3 class="project-title">Multi-Post Stories Gain+Glory</h3>
+              <ul class="tags">
+                <li class="tag-item">Ruby on rails</li>
+                <li class="tag-item">CSS</li>
+                <li class="tag-item">JavaScript</li>
+                <li class="tag-item">HTML</li>
+              </ul>
+              <button type="submit">See Project</button>
+            </div>
           </div>
-        </div>
-
-        <div class="grid-card">
-          <div class="card-img"></div>
-          <div class="box">
-            <h3 class="project-title">Multi-Post Stories Gain+Glory</h3>
-            <ul class="tags">
-              <li class="tag-item">Ruby on rails</li>
-              <li class="tag-item">CSS</li>
-              <li class="tag-item">JavaScript</li>
-              <li class="tag-item">HTML</li>
-            </ul>
-            <button type="submit">See Project</button>
+  
+          <div class="grid-card">
+            <div class="card-img"></div>
+            <div class="box">
+              <h3 class="project-title">Multi-Post Stories Gain+Glory</h3>
+              <ul class="tags">
+                <li class="tag-item">Ruby on rails</li>
+                <li class="tag-item">CSS</li>
+                <li class="tag-item">JavaScript</li>
+                <li class="tag-item">HTML</li>
+              </ul>
+              <button type="submit">See Project</button>
+            </div>
           </div>
-        </div>
-
-        <div class="grid-card">
-          <div class="card-img"></div>
-          <div class="box">
-            <h3 class="project-title">Multi-Post Stories Gain+Glory</h3>
-            <ul class="tags">
-              <li class="tag-item">Ruby on rails</li>
-              <li class="tag-item">CSS</li>
-              <li class="tag-item">JavaScript</li>
-              <li class="tag-item">HTML</li>
-            </ul>
-            <button type="submit">See Project</button>
-          </div>
-        </div>
-
-        <div class="grid-card">
-          <div class="card-img"></div>
-          <div class="box">
-            <h3 class="project-title">Multi-Post Stories Gain+Glory</h3>
-            <ul class="tags">
-              <li class="tag-item">Ruby on rails</li>
-              <li class="tag-item">CSS</li>
-              <li class="tag-item">JavaScript</li>
-              <li class="tag-item">HTML</li>
-            </ul>
-            <button type="submit">See Project</button>
-          </div>
-        </div>
-
-        <div class="grid-card">
-          <div class="card-img"></div>
-          <div class="box">
-            <h3 class="project-title">Multi-Post Stories Gain+Glory</h3>
-            <ul class="tags">
-              <li class="tag-item">Ruby on rails</li>
-              <li class="tag-item">CSS</li>
-              <li class="tag-item">JavaScript</li>
-              <li class="tag-item">HTML</li>
-            </ul>
-            <button type="submit">See Project</button>
+  
+          <div class="grid-card">
+            <div class="card-img"></div>
+            <div class="box">
+              <h3 class="project-title">Multi-Post Stories Gain+Glory</h3>
+              <ul class="tags">
+                <li class="tag-item">Ruby on rails</li>
+                <li class="tag-item">CSS</li>
+                <li class="tag-item">JavaScript</li>
+                <li class="tag-item">HTML</li>
+              </ul>
+              <button type="submit">See Project</button>
+        </div>  
           </div>
         </div>
       </div>
     </section>
 
     <!-- About myself -->
-    <section class="about-me">
+    <section class="about-me container">
       <div class="title-card">
         <h2 class="about-me-title">About Me</h2>
         <p class="about-me-subtitle">
@@ -173,7 +180,7 @@
         </p>
         <button type="submit" class="about-me-btn">Get My Resume</button>
       </div>
-      <div class="grid-container">
+      <div class="grid-container about-container">
         <div class="lang-card about-box">
           <img src="images/Icons.png" alt="icon languages" />
           <h4 class="lang-title">Languages</h4>
@@ -209,40 +216,53 @@
       </div>
     </section>
 
-    <section class="form-section">
+    <section class="form-section container">
       <div class="form-container">
-        <h2 class="form-title">
-          I'm always interested in hearing about new projects, so if you'd like
-          to chat please get in touch.
-        </h2>
-        <form action="https://formspree.io/f/xqkjapkj" method="post">
-          <input
-            type="text"
-            maxlength="30"
-            name="name"
-            id="user-name"
-            required
-            placeholder="Full name"
-          />
-          <input
-            type="email"
-            name="user-email"
-            id="user-email"
-            required
-            placeholder="Email address"
-          />
-          <textarea
-            name="user-text"
-            id="user-message"
-            maxlength="500"
-            cols="30"
-            rows="10"
-            placeholder="Enter text here"
-            required
-          >
-          </textarea>
-          <button type="submit" class="btn">Get in touch</button>
-        </form>
+        <div class="text-form">
+          <div class="fort-heading">
+            <h2 class="form-title">
+              I'm always interested in hearing about new projects, so if you'd like
+              to chat please get in touch.
+            </h2>
+          </div>
+          <div class="form">
+            <form action="https://formspree.io/f/xqkjapkj" method="post" class="form">
+              <input
+                type="text"
+                maxlength="30"
+                name="name"
+                id="user-name"
+                required
+                placeholder="Full name"
+              />
+              <input
+                type="email"
+                name="user-email"
+                id="user-email"
+                required
+                placeholder="Email address"
+              />
+              <textarea
+                name="user-text"
+                id="user-message"
+                maxlength="500"
+                cols="30"
+                rows="10"
+                placeholder="Enter text here"
+                required
+              >
+              </textarea>
+              <button type="submit" class="btn desktop">Get in touch</button>
+            </form>
+            <img class="form-bg-img1" src="images/right-form-bg-img.svg" alt="background frame">
+          </div> 
+        </div>
+  
+      </div>
+      <a class="my-email" href="#">myemailhere@gmail.com</a>
+    </section>
+    <footer class="footer-icons">
+      <div class="footer-icons">
         <ul class="icons">
           <li>
             <a href="#">
@@ -271,7 +291,6 @@
           </li>
         </ul>
       </div>
-      <a class="my-email" href="#">myemailhere@gmail.com</a>
-    </section>
+    </footer>
   </body>
 </html>
