@@ -213,7 +213,7 @@ button:active {
 }
 
 button:enabled {
-  color: #ffffff;
+  color: #fff;
   border-radius: 4px;
 }
 
@@ -264,7 +264,6 @@ button:enabled {
   background: #ebf0ee;
   border: 1px solid #c1c7d0;
   border-radius: 8px;
-  height: 50vh;
   width: 327px;
   height: 352px;
   text-align: center;
@@ -286,7 +285,7 @@ button:enabled {
   width: 90px;
   letter-spacing: 0.03em;
   padding: 0.75rem;
-  background: #ffffff;
+  background: #fff;
   border-radius: 8px;
 }
 
@@ -412,7 +411,6 @@ textarea {
     flex-direction: column;
     align-items: center;
     padding: 160px 0px;
-    gap: 24px;
     width: 90%;
     height: 756px;
     left: 260px;
@@ -455,7 +453,6 @@ textarea {
     align-items: center;
     padding: 80px 0px;
     gap: 48px;
-    width: 90%;
   }
 
   .work-heading > h2 {
@@ -484,7 +481,7 @@ textarea {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 4px 0px;
+    padding: 4px 0;
     gap: 24px;
   }
 
@@ -492,7 +489,7 @@ textarea {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 4px 0px;
+    padding: 4px 0;
     gap: 24px;
   }
 
@@ -504,7 +501,7 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px;
+    padding: 0;
     gap: 24px;
     width: 90%;
     background-repeat: no-repeat;
@@ -537,7 +534,7 @@ textarea {
 
   .text-form {
     display: flex;
-    padding: 80px 0px;
+    padding: 80px 0;
     gap: 25px;
     width: 1171px;
     height: 490px;
@@ -593,7 +590,7 @@ textarea {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px;
+    padding: 0;
     width: 200px;
     height: 40px;
     margin: 0 auto;
