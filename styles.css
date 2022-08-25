@@ -79,7 +79,6 @@ li {
   justify-content: space-evenly;
   align-items: center;
   padding: 0;
-  margin: 0;
   width: 170.17px;
   height: 20px;
   padding-top: 3rem;
@@ -214,16 +213,14 @@ button:active {
 }
 
 button:enabled {
-  color: #fff;
-  border-radius: 4px;
+  color: #ffffff;
   border-radius: 4px;
 }
 
 /* about section */
 .title-card {
   text-align: center;
-  background: url(images/about-me-mobile1.png) top right no-repeat,
-    url(images/about-me-\ mobile.png);
+  background: url(images/about-me-mobile1.png) top right no-repeat, url(images/about-me-\ mobile.png);
 }
 
 .about-me-title {
@@ -438,6 +435,7 @@ textarea {
     letter-spacing: 0.37px;
     color: #172b4d;
   }
+
   .headline-subtitle {
     width: 700px;
     height: 96px;
@@ -450,6 +448,7 @@ textarea {
     color: #172b4d;
     margin-top: -30px;
   }
+
   .work-container {
     display: flex;
     flex-direction: column;
@@ -458,6 +457,7 @@ textarea {
     gap: 48px;
     width: 90%;
   }
+
   .work-heading > h2 {
     width: 450px;
     height: 48px;
@@ -468,15 +468,18 @@ textarea {
     line-height: 52px;
     color: #172b4d;
   }
+
   .line {
     display: none;
   }
+
   .work-sub-container {
     display: flex;
     flex-direction: column;
     padding: 0;
     gap: 24px;
   }
+
   .row1 {
     display: flex;
     flex-direction: row;
@@ -484,6 +487,7 @@ textarea {
     padding: 4px 0px;
     gap: 24px;
   }
+
   .row2 {
     display: flex;
     flex-direction: row;
@@ -491,9 +495,11 @@ textarea {
     padding: 4px 0px;
     gap: 24px;
   }
+
   .box {
     height: none;
   }
+
   .title-card {
     display: flex;
     flex-direction: column;
@@ -504,6 +510,7 @@ textarea {
     background-repeat: no-repeat;
     background-position-y: bottom;
   }
+
   .about-me-subtitle {
     width: 920px;
     height: 96px;
@@ -515,6 +522,7 @@ textarea {
     text-align: center;
     color: #42526e;
   }
+
   .about-container {
     display: flex;
     gap: 24px;
@@ -526,6 +534,7 @@ textarea {
     width: 90%;
     background: none;
   }
+
   .text-form {
     display: flex;
     padding: 80px 0px;
@@ -534,9 +543,7 @@ textarea {
     height: 490px;
     justify-content: center;
     align-items: flex-start;
-    background: url(images/left-form-bg-img.svg) bottom left,
-      url(images/left-center-form-bg-img.svg) bottom center,
-      url(images/right-form-bg-img.svg) bottom right;
+    background: url(images/left-form-bg-img.svg) bottom left, url(images/left-center-form-bg-img.svg) bottom center, url(images/right-form-bg-img.svg) bottom right;
     background-repeat: no-repeat;
     background-position: cover;
   }
@@ -552,8 +559,8 @@ textarea {
     display: flex;
     align-items: center;
     color: #172b4d;
-    align-items: flex-start;
   }
+
   .form {
     display: flex;
     flex-direction: column;
@@ -561,6 +568,7 @@ textarea {
     justify-content: flex-start;
     height: 330px;
   }
+
   .desktop {
     margin: 0;
     align-self: flex-start;
@@ -569,6 +577,7 @@ textarea {
   .my-email {
     display: none;
   }
+
   .form-bg-img1 {
     display: none;
   }
@@ -589,6 +598,7 @@ textarea {
     height: 40px;
     margin: 0 auto;
   }
+
   .logo,
   .nav-menu {
     display: none;
@@ -609,6 +619,7 @@ textarea {
     justify-content: center;
     margin: 0 auto;
   }
+
   .desktop-nav li a {
     text-decoration: none;
     list-style: none;
