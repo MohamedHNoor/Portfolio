@@ -18,6 +18,10 @@ body {
   box-sizing: inherit;
 }
 
+.desktop-nav {
+  display: none;
+}
+
 .flex {
   display: flex;
 }
@@ -28,14 +32,12 @@ li {
 }
 
 /* toolbar */
-
 .mobile-nav {
   display: flex;
   justify-content: space-between;
   padding: 1.5rem;
  }
  
-
 .headline {
   flex-direction: column;
   align-items: center;
@@ -98,7 +100,6 @@ li {
 }
 
 /* work section */
-
 .work-container,
 .about-me {
   display: grid;
@@ -219,7 +220,6 @@ button:enabled {
 }
 
 /* about section */
-
 .title-card {
   text-align: center;
   background: url(images/about-me-mobile1.png) top right no-repeat, url(images/about-me-\ mobile.png);
@@ -579,40 +579,37 @@ textarea {
   }
 
   ul.icons {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      padding: 0px;
-      width: 200px;
-      height: 40px;
-      margin: 0 auto;
-     }
-     .logo, .nav-menu {
-      display: none;
-     }
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    width: 200px;
+    height: 40px;
+    margin: 0 auto;
+  }
+  .logo, .nav-menu {
+    display: none;
+  }
 
-     .desktop-nav {
-      display: block !important;
-      display: flex;
-      flex-direction: row;
-     }
+  .desktop-nav {
+    display: block !important;
+    display: flex;
+    flex-direction: row;
+  }
 
-     .desktop-nav ul {
-      display: flex;
-      align-items: center;
-      gap: 40px;
-      width: 255px;
-      height: 40px;
-      cursor: pointer;
-      justify-content: center;
-      margin: 0 auto;
-      margin-top: 1rem;
-     }
-     .desktop-nav li a {
-      text-decoration: none;
-      list-style: none;
-      font-size: 18px;
-      color: #172b4d;
-     }   
+  .desktop-nav ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 255px;
+    cursor: pointer;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .desktop-nav li a {
+    text-decoration: none;
+    list-style: none;
+    font-size: 18px;
+    color: #172b4d;
+  }   
 }
-
