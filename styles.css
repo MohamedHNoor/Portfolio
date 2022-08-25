@@ -22,6 +22,10 @@ body {
   display: none;
 }
 
+.background-frames {
+  display: none;
+}
+
 .flex {
   display: flex;
 }
@@ -220,7 +224,8 @@ button:enabled {
 /* about section */
 .title-card {
   text-align: center;
-  background: url(images/about-me-mobile1.png) top right no-repeat, url(images/about-me-\ mobile.png);
+  background: url(images/about-me-mobile1.png) top right no-repeat,
+    url(images/about-me-\ mobile.png);
 }
 
 .about-me-title {
@@ -312,10 +317,8 @@ button:enabled {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 64px 24px;
   gap: 24px;
   width: 375px;
-  height: 879px;
   align-content: center;
   justify-content: center;
   margin: 0 auto;
@@ -386,16 +389,13 @@ textarea {
 
 .my-email {
   width: 375px;
-  height: 189px;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 32px;
   text-align: center;
   color: #42526e;
   text-decoration: none;
-  margin-bottom: 3rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -534,15 +534,15 @@ textarea {
 
   .text-form {
     display: flex;
-    padding: 80px 0;
-    gap: 25px;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 80px 0px;
+    gap: 24px;
+    position: absolute;
     width: 1171px;
     height: 490px;
-    justify-content: center;
-    align-items: flex-start;
-    background: url(images/left-form-bg-img.svg) bottom left, url(images/left-center-form-bg-img.svg) bottom center, url(images/right-form-bg-img.svg) bottom right;
-    background-repeat: no-repeat;
-    background-position: cover;
+    left: 304px;
+    top: 3139px;
   }
 
   .form-title {
@@ -558,12 +558,39 @@ textarea {
     color: #172b4d;
   }
 
-  .form {
+  form.form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
+    padding: 0px;
+    gap: 24px;
+    width: 684px;
     height: 330px;
+  }
+
+  #user-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+    width: 684px;
+    height: 48px;
+  }
+
+  #user-email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+    width: 684px;
+    height: 48px;
+  }
+
+  #user-message {
+    width: 684px;
+    height: 114px;
   }
 
   .desktop {
@@ -579,12 +606,15 @@ textarea {
     display: none;
   }
 
-  .footer-icons {
-    width: 100%;
-    border-top: 1px solid gray;
+  footer.footer-icons {
     position: absolute;
+    width: 100%;
     height: 72px;
-  }
+    left: 0;
+    top: 3774px;
+    border-top: 1px solid #dfe1e6;
+   }
+   
 
   ul.icons {
     display: flex;
@@ -602,25 +632,46 @@ textarea {
   }
 
   .desktop-nav {
-    display: block !important;
-    display: flex;
-    flex-direction: row;
-  }
-
-  .desktop-nav ul {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    width: 255px;
-    cursor: pointer;
+    display: grid;
+    display: block;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
-    margin: 0 auto;
-  }
+    align-items: center;
+   }
+   
 
-  .desktop-nav li a {
+   .desktop-nav ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    box-sizing: border-box;
+    width: 400px;
+    margin: 0 auto;    
+   }
+
+   .desktop-nav li {
+    margin: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+   }
+   
+   .desktop-nav li a {
     text-decoration: none;
     list-style: none;
     font-size: 18px;
     color: #172b4d;
+    gap: 40px;
+    margin: 0 auto;
+  }
+
+  .background-frames {
+    display: block;
+    margin-top: 13rem;
+  }
+
+  .right-form-bg-img {
+    float: right;
+    margin-top: -8rem;
   }
 }
