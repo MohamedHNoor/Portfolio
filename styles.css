@@ -224,8 +224,7 @@ button:enabled {
 /* about section */
 .title-card {
   text-align: center;
-  background: url(images/about-me-mobile1.png) top right no-repeat,
-    url(images/about-me-\ mobile.png);
+  background: url(images/about-me-mobile1.png) top right no-repeat, url(images/about-me-\ mobile.png);
 }
 
 .about-me-title {
@@ -536,7 +535,7 @@ textarea {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 80px 0px;
+    padding: 80px 0;
     gap: 24px;
     position: absolute;
     width: 1171px;
@@ -572,7 +571,7 @@ textarea {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px;
+    padding: 0;
     gap: 24px;
     width: 684px;
     height: 48px;
@@ -582,7 +581,7 @@ textarea {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px;
+    padding: 0;
     gap: 24px;
     width: 684px;
     height: 48px;
@@ -615,7 +614,6 @@ textarea {
     border-top: 1px solid #dfe1e6;
    }
    
-
   ul.icons {
     display: flex;
     flex-direction: row;
@@ -639,7 +637,6 @@ textarea {
     align-items: center;
    }
    
-
    .desktop-nav ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -675,3 +672,4 @@ textarea {
     margin-top: -8rem;
   }
 }
+
