@@ -359,8 +359,8 @@ button:enabled {
   display: flex;
   flex-direction: column;
   gap: 10px;
- }
- 
+}
+
 input[type="text"],
 input[type="email"] {
   width: 327px;
@@ -392,9 +392,8 @@ textarea {
 
 .form-section > img {
   margin-top: -135%;
- }
+}
  
-
 .form-section .icons {
   display: flex;
   margin: 0 auto;
@@ -405,8 +404,8 @@ textarea {
   flex-direction: column;
   align-items: center;
   gap: 20px;
- }
- 
+}
+
 .my-email {
   width: 375px;
   font-family: "Inter", sans-serif;
@@ -598,7 +597,8 @@ textarea {
     row-gap: 3rem;
     grid-template-areas: "title-card title-card title-card" "lang-card framework-card skills-card";
     gap: 30px;
-   }
+  }
+
   /* form section */
   .form-section {
     display: flex;
@@ -606,9 +606,6 @@ textarea {
     align-items: flex-start;
     width: 80%;
     height: 70%;
-    /* background: url(images/Contact.png);
-    background-repeat: no-repeat;
-    margin-top: -15rem; */
   }
 
   .titleAndForm-container {
@@ -627,8 +624,8 @@ textarea {
     display: flex;
     align-items: center;
     color: #172b4d;
-   }
-   
+  }
+
   form.form {
     width: 55%;
     height: auto;
@@ -666,7 +663,6 @@ textarea {
     font-weight: 400;
     border-radius: 4px;
     font-family: "Inter", sans-serif;
-    font-weight: 400;
   }
 
   .form-section > img {
@@ -694,5 +690,4 @@ textarea {
     padding: 0.5rem;
     border-top: 1px solid #dfe1e6;
   }
-  
 }
