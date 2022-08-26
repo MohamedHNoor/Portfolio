@@ -180,7 +180,7 @@
         </p>
         <button type="submit" class="about-me-btn">Get My Resume</button>
       </div>
-      <div class="grid-container about-container">
+      <div class="about-container">
         <div class="lang-card about-box">
           <img src="images/Icons.png" alt="icon languages" />
           <h4 class="lang-title">Languages</h4>
@@ -214,67 +214,43 @@
           </ul>
         </div>
       </div>
+        
     </section>
 
     <section class="form-section container">
-      <div class="form-container">
-        <div class="text-form">
-          <div class="fort-heading">
-            <h2 class="form-title">
-              I'm always interested in hearing about new projects, so if you'd
-              like to chat please get in touch.
-            </h2>
-          </div>
-          <div class="form">
-            <form
-              action="https://formspree.io/f/xqkjapkj"
-              method="post"
-              class="form"
-            >
-              <input
-                type="text"
-                maxlength="30"
-                name="name"
-                id="user-name"
-                required
-                placeholder="Full name"
-              />
-              <input
-                type="email"
-                name="user-email"
-                id="user-email"
-                required
-                placeholder="Email address"
-              />
-              <textarea
-                name="user-text"
-                id="user-message"
-                maxlength="500"
-                cols="30"
-                rows="10"
-                placeholder="Enter text here"
-                required
-              >
-              </textarea>
-              <button type="submit" class="btn desktop">Get in touch</button>
-            </form>
-            <img
-              class="form-bg-img1"
-              src="images/right-form-bg-img.svg"
-              alt="background frame"
-            />
-          </div>
-        </div>
+      <div class="titleAndForm-container">
+          <h2 class="form-title">
+          I'm always interested in hearing about new projects, so if you'd
+          like to chat please get in touch.
+          </h2>
+              
+        <form
+          action="https://formspree.io/f/xqkjapkj"
+          method="post"
+          class="form"
+        >
+          <input
+            type="text"
+            maxlength="30"
+            name="name"
+            id="user-name"
+            required
+            placeholder="Full name"
+          />
+          <input
+            type="email"
+            name="user-email"
+            id="user-email"
+            required
+            placeholder="Email address"
+          />
+          <textarea placeholder="Text here..." name="user-text" id="user-text" cols="30" rows="10"></textarea>
+          <button type="submit" class="btn desktop">Get in touch</button>
+        </form>
       </div>
-      <a class="my-email" href="#">myemailhere@gmail.com</a>
+      <img src="images/Contact.png" alt="contact form background images">
     </section>
-    <div class="background-frames">
-      <img class="left-form-bg-img" src="images/left-form-bg-img.svg" alt="form left background frame">
-            <img class="left-center-bg-img" src="images/left-center-form-bg-img.svg" alt="form left center background form">
-            <img class="right-form-bg-img" src="images/right-form-bg-img.svg" alt="form right background frame">
-    </div>
     <footer class="footer-icons">
-      <div class="footer-icons">
         <ul class="icons">
           <li>
             <a href="#">
@@ -302,7 +278,7 @@
             </a>
           </li>
         </ul>
-      </div>
+      <a class="my-email" href="#">myemailhere@gmail.com</a>
     </footer>
   </body>
 </html>
