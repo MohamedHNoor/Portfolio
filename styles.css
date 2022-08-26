@@ -224,8 +224,7 @@ button:enabled {
 /* about section */
 .title-card {
   text-align: center;
-  background: url(images/about-me-mobile1.png) top right no-repeat,
-    url(images/about-me-\ mobile.png);
+  background: url(images/about-me-mobile1.png) top right no-repeat, url(images/about-me-\ mobile.png);
 }
 
 .about-me-title {
