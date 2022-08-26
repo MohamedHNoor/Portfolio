@@ -1,8 +1,3 @@
-/* stylelint-disable color-hex-length */
-/* stylelint-disable no-eol-whitespace */
-/* stylelint-disable indentation */
-/* stylelint-disable declaration-block-no-duplicate-properties */
-
 html {
   font-size: 100%;
   line-height: 1.5rem;
@@ -23,6 +18,18 @@ body {
   box-sizing: inherit;
 }
 
+.container {
+  width: 90%;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+.background-frames {
+  display: none;
+}
+
 .flex {
   display: flex;
 }
@@ -33,11 +40,9 @@ li {
 }
 
 /* toolbar */
-.header-nav {
-  flex-wrap: wrap;
+.mobile-nav {
+  display: flex;
   justify-content: space-between;
-  align-items: center;
-  overflow: hidden;
   padding: 1.5rem;
 }
 
@@ -82,10 +87,11 @@ li {
   justify-content: space-evenly;
   align-items: center;
   padding: 0;
-  margin: 0;
   width: 170.17px;
   height: 20px;
   padding-top: 3rem;
+  display: flex;
+  margin: 0 auto;
 }
 
 .icon-item {
@@ -101,7 +107,6 @@ li {
 }
 
 /* work section */
-
 .work-container,
 .about-me {
   display: grid;
@@ -218,11 +223,9 @@ button:active {
 button:enabled {
   color: #fff;
   border-radius: 4px;
-  border-radius: 4px;
 }
 
 /* about section */
-
 .title-card {
   text-align: center;
   background: url(images/about-me-mobile1.png) top right no-repeat, url(images/about-me-\ mobile.png);
@@ -269,7 +272,6 @@ button:enabled {
   background: #ebf0ee;
   border: 1px solid #c1c7d0;
   border-radius: 8px;
-  height: 50vh;
   width: 327px;
   height: 352px;
   text-align: center;
@@ -291,7 +293,7 @@ button:enabled {
   width: 90px;
   letter-spacing: 0.03em;
   padding: 0.75rem;
-  background: #ffffff;
+  background: #fff;
   border-radius: 8px;
 }
 
@@ -318,18 +320,18 @@ button:enabled {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 64px 24px;
   gap: 24px;
   width: 375px;
-  height: 879px;
   align-content: center;
   justify-content: center;
   margin: 0 auto;
 }
 
-.form-container {
-  background: url(images/bg-img-contact-form.svg) bottom right;
-  background-repeat: no-repeat;
+.form-bg-img1 {
+  width: 17%;
+  position: absolute;
+  right: 2px;
+  top: 6547px;
 }
 
 .form-container form {
@@ -350,8 +352,13 @@ button:enabled {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  text-align: center;
   color: #172b4d;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 input[type="text"],
@@ -383,21 +390,305 @@ textarea {
   background: #008552;
 }
 
+.form-section > img {
+  margin-top: -135%;
+}
+
 .form-section .icons {
   display: flex;
   margin: 0 auto;
 }
 
+.footer-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
 .my-email {
   width: 375px;
-  height: 189px;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 32px;
   text-align: center;
   color: #42526e;
   text-decoration: none;
-  margin-bottom: 3rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .logo,
+  .nav-menu {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: grid;
+    display: block;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .desktop-nav ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    box-sizing: border-box;
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .desktop-nav li {
+    margin: 1rem;
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .desktop-nav li a {
+    text-decoration: none;
+    list-style: none;
+    font-size: 18px;
+    color: #172b4d;
+    gap: 40px;
+    margin: 0 auto;
+  }
+
+  .container {
+    width: 90%;
+    padding: 1rem;
+    margin: 0 auto;
+    background: none;
+  }
+
+  .headline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 160px 0;
+    width: 90%;
+    height: 756px;
+    left: 260px;
+    top: 72px;
+    background: url(images/Header-desktop-img.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .headline-title {
+    width: 920px;
+    height: 114px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.37px;
+    color: #172b4d;
+  }
+
+  .headline-subtitle {
+    width: 700px;
+    height: 96px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    color: #172b4d;
+    margin-top: -30px;
+  }
+
+  .work-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0;
+    gap: 48px;
+  }
+
+  .work-heading > h2 {
+    width: 450px;
+    height: 48px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #172b4d;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .work-sub-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 24px;
+  }
+
+  .row1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 0;
+    gap: 24px;
+  }
+
+  .row2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 0;
+    gap: 24px;
+  }
+
+  .box {
+    height: none;
+  }
+
+  .title-card {
+    width: 100%;
+    grid-area: title-card;
+    height: auto;
+    background: url(images/abt.png);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-me-title {
+    margin-top: 4.5rem;
+    width: 30rem;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 3.5rem;
+    text-align: center;
+    color: #172b4d;
+  }
+
+  .about-me-subtitle {
+    margin-bottom: 0.5rem;
+    width: 60%;
+    height: auto;
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 3rem;
+    color: #42526e;
+  }
+
+  .about-container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 320px 352px;
+    row-gap: 3rem;
+    grid-template-areas: "title-card title-card title-card" "lang-card framework-card skills-card";
+    gap: 30px;
+  }
+
+  /* form section */
+  .form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+    height: 70%;
+  }
+
+  .titleAndForm-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .form-title {
+    width: 463px;
+    height: 256px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
+    color: #172b4d;
+  }
+
+  form.form {
+    width: 55%;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+    z-index: 20;
+    font-family: "Inter", sans-serif;
+  }
+
+  .form input {
+    width: 684px;
+    height: 48px;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    background: #fff;
+    border: 1px solid #d0d9d4;
+    font-size: 1.5rem;
+    font-weight: 400;
+    border-radius: 4px;
+    font-family: "Inter", sans-serif;
+  }
+
+  .form textarea {
+    width: 684px;
+    height: 9rem;
+    padding: 1rem 1rem;
+    margin: 0.25rem;
+    gap: 1.5rem;
+    background: #fff;
+    color: #000;
+    border: 1px solid #d0d9d4;
+    font-size: 1.5rem;
+    font-weight: 400;
+    border-radius: 4px;
+    font-family: "Inter", sans-serif;
+  }
+
+  .form-section > img {
+    margin-top: -20%;
+  }
+
+  .desktop {
+    margin: 0;
+    align-self: flex-start;
+  }
+
+  .my-email {
+    display: none;
+  }
+
+  .form-bg-img1 {
+    display: none;
+  }
+
+  .footer-icons {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-flow: column;
+    padding: 0.5rem;
+    border-top: 1px solid #dfe1e6;
+  }
 }
