@@ -455,6 +455,7 @@ textarea {
     gap: 40px;
     margin: 0 auto;
   }
+
   .container {
     width: 90%;
     padding: 1rem;
@@ -613,6 +614,7 @@ textarea {
     justify-content: center;
     margin: 0 auto;
   }
+
   .form-title {
     width: 463px;
     height: 256px;
@@ -647,7 +649,6 @@ textarea {
     font-weight: 400;
     border-radius: 4px;
     font-family: "Inter", sans-serif;
-    font-weight: 400;
   }
 
   .form textarea {
