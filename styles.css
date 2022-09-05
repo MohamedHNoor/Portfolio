@@ -3,6 +3,7 @@ html {
   line-height: 1.5rem;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -10,6 +11,8 @@ body {
   padding: 0;
   min-height: 100vh;
   max-width: 1400vw;
+  overflow-x: hidden;
+  font-family: inherit;
 }
 
 *,
@@ -22,10 +25,6 @@ body {
   width: 90%;
 }
 
-.desktop-nav {
-  display: none;
-}
-
 .background-frames {
   display: none;
 }
@@ -36,16 +35,98 @@ body {
 
 li {
   list-style: none;
+}
+
+a {
   text-decoration: none;
 }
 
-/* toolbar */
+/* navigation */
 .mobile-nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1.5rem;
 }
 
+.logo {
+  padding: 0 0.25rem;
+}
+
+.logo img {
+  width: 120px;
+}
+
+.nav-toggle {
+  z-index: 1000;
+  padding: 0.5em;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.hamburger {
+  width: 35px;
+  height: 5px;
+  background-color: #000;
+  margin: 6px 0;
+}
+
+.show-links .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.show-links .bar2 {
+  opacity: 0;
+}
+
+.show-links .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.nav {
+  position: fixed;
+  background: #fff;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.show-links .nav {
+  transform: translateX(0);
+}
+
+.links {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  margin: 3rem 2rem;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 3rem 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: #3a4a42;
+  font-weight: bold;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: #0a2759;
+}
+
+/* headline */
 .headline {
   flex-direction: column;
   align-items: center;
@@ -419,7 +500,7 @@ textarea {
 
 @media only screen and (min-width: 768px) {
   .logo,
-  .nav-menu {
+  .nav-toggle {
     display: none;
   }
 
@@ -429,6 +510,9 @@ textarea {
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
+    transform: translateX(0%);
+    height: 0;
+    transition: transform 250ms ease-in-out;
   }
 
   .desktop-nav ul {
@@ -618,7 +702,7 @@ textarea {
   .form-title {
     width: 463px;
     height: 256px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 30px;

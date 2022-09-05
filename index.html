@@ -21,24 +21,30 @@
     <!-- Toolbar -->
     <header class="header">
       <div class="mobile-nav">
-        <a href="#" class="logo">
+        <a href="#home" class="logo">
           <img src="images/Welcome.png" alt="welcome logo" />
         </a>
-        <a href="#" class="nav-menu">
-          <img src="images/Union.png" alt="hamburger menu" />
-        </a>
+        <div class="nav-toggle">
+          <div class="hamburger bar1"></div>
+          <div class="hamburger bar2"></div>
+          <div class="hamburger bar3"></div>
+        </div>
       </div>
-      <nav class="desktop-nav">
-        <ul class="desktop-menu">
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+      <nav class="nav desktop-nav">
+        <ul class="desktop-menu links">
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
 
     <!-- Headline Section -->
-    <section class="headline flex container">
+    <section id="home" class="headline flex container">
       <h1 class="headline-title">
         Hi there. I'm Mohamed<br /><span>I'm a software developer</span>
       </h1>
@@ -54,7 +60,9 @@
           <a href="#"><img src="images/twitter.png" alt="twitter icon" /></a>
         </li>
         <li class="icon-item">
-          <a href="#"><img src="images/Linkedin-icon.png" alt="linkedin icon" /></a>
+          <a href="#"
+            ><img src="images/Linkedin-icon.png" alt="linkedin icon"
+          /></a>
         </li>
         <li class="icon-item">
           <a href="#"><img src="images/medium.png" alt="medium icon" /></a>
@@ -63,7 +71,9 @@
           <a href="#"><img src="images/github.png" alt="GitHub icon" /></a>
         </li>
         <li class="icon-item">
-          <a href="#"><img src="images/angellist.png" alt="angellist icon" /></a>
+          <a href="#"
+            ><img src="images/angellist.png" alt="angellist icon"
+          /></a>
         </li>
       </ul>
 
@@ -74,7 +84,7 @@
     </section>
 
     <!-- work section -->
-    <section class="work-container container">
+    <section id="portfolio" class="work-container container">
       <div class="work-heading">
         <h2>My Recent Works</h2>
         <div class="line"></div>
@@ -170,7 +180,7 @@
     </section>
 
     <!-- About myself -->
-    <section class="about-me container">
+    <section id="about" class="about-me container">
       <div class="title-card">
         <h2 class="about-me-title">About Me</h2>
         <p class="about-me-subtitle">
@@ -214,16 +224,15 @@
           </ul>
         </div>
       </div>
-        
     </section>
 
-    <section class="form-section container">
+    <section id="contact" class="form-section container">
       <div class="titleAndForm-container">
-          <h2 class="form-title">
-          I'm always interested in hearing about new projects, so if you'd
-          like to chat please get in touch.
-          </h2>
-              
+        <h2 class="form-title">
+          I'm always interested in hearing about new projects, so if you'd like
+          to chat please get in touch.
+        </h2>
+
         <form
           action="https://formspree.io/f/xqkjapkj"
           method="post"
@@ -244,41 +253,48 @@
             required
             placeholder="Email address"
           />
-          <textarea placeholder="Text here..." name="user-text" id="user-text" cols="30" rows="10"></textarea>
+          <textarea
+            placeholder="Text here..."
+            name="user-text"
+            id="user-text"
+            cols="30"
+            rows="10"
+          ></textarea>
           <button type="submit" class="btn desktop">Get in touch</button>
         </form>
       </div>
-      <img src="images/Contact.png" alt="contact form background images">
+      <img src="images/Contact.png" alt="contact form background images" />
     </section>
     <footer class="footer-icons">
-        <ul class="icons">
-          <li>
-            <a href="#">
-              <img src="images/twitter.png" alt="twitter icon" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="images/Linkedin-icon.png" alt="twitter icon" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="images/medium.png" alt="twitter icon" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="images/github.png" alt="twitter icon" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="images/angellist.png" alt="twitter icon" />
-            </a>
-          </li>
-        </ul>
+      <ul class="icons">
+        <li>
+          <a href="#">
+            <img src="images/twitter.png" alt="twitter icon" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/Linkedin-icon.png" alt="twitter icon" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/medium.png" alt="twitter icon" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/github.png" alt="twitter icon" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/angellist.png" alt="twitter icon" />
+          </a>
+        </li>
+      </ul>
       <a class="my-email" href="#">myemailhere@gmail.com</a>
     </footer>
+    <script src="./js/main.js"></script>
   </body>
 </html>
