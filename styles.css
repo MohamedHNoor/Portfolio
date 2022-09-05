@@ -72,10 +72,6 @@ a {
   margin: 6px 0;
 }
 
-.show-links .nav{
-  transform: translateX(0);
-}
-
 .show-links .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
   transform: rotate(-45deg) translate(-9px, 6px);
@@ -100,6 +96,10 @@ a {
   z-index: 100;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+}
+
+.show-links .nav {
+  transform: translateX(0);
 }
 
 .links {
@@ -309,8 +309,7 @@ button:enabled {
 /* about section */
 .title-card {
   text-align: center;
-  background: url(images/about-me-mobile1.png) top right no-repeat,
-    url(images/about-me-\ mobile.png);
+  background: url(images/about-me-mobile1.png) top right no-repeat, url(images/about-me-\ mobile.png);
 }
 
 .about-me-title {
