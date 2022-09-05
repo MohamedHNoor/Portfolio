@@ -99,7 +99,7 @@ a {
   right: 0;
   z-index: 100;
   transform: translateX(100%);
-  transition: transform 0.5ms ease-in-out;
+  transition: transform 250ms ease-in-out;
 }
 
 .links {
@@ -513,7 +513,7 @@ textarea {
     align-items: center;
     transform: translateX(0%);
     height: 0;
-    transition: transform 0.5ms ease-in-out;
+    transition: transform 250ms ease-in-out;
   }
 
   .desktop-nav ul {
