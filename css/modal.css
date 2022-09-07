@@ -12,7 +12,6 @@
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(24px);
-  background: #c1c7d0;
   box-sizing: border-box;
 }
 
@@ -155,7 +154,6 @@
     height: 32px;
     justify-content: flex-start;
     width: 500px;
-    height: 32px;
     align-self: flex-start;
   }
 

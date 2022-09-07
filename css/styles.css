@@ -308,7 +308,8 @@ button:enabled {
 /* about section */
 .title-card {
   text-align: center;
-  background: url(../images/about-me-mobile1.png) top right no-repeat, url(images/about-me-\ mobile.png);
+  background: url(../images/about-me-mobile1.png) top right no-repeat,
+    url(images/about-me-\ mobile.png);
 }
 
 .about-me-title {
@@ -634,7 +635,7 @@ textarea {
   }
 
   .box {
-    height: none;
+    height: 0;
   }
 
   .title-card {
@@ -770,7 +771,6 @@ textarea {
 
   .footer-icons {
     width: 100%;
-    height: fit-content;
     display: flex;
     flex-flow: column;
     padding: 0.5rem;
