@@ -23,6 +23,8 @@ body {
 
 .container {
   width: 90%;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
 .background-frames {
@@ -711,7 +713,7 @@ textarea {
   }
 
   form.form {
-    width: 55%;
+    width: 80%;
     height: auto;
     display: flex;
     flex-flow: column;
@@ -750,6 +752,8 @@ textarea {
 
   .form-section > img {
     margin-top: -20%;
+    margin-left: 3rem;
+    width: 100%;
   }
 
   .desktop {

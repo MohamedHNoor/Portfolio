@@ -56,8 +56,8 @@ myModal.innerHTML = `<div class="modal-content">
       <img
         src="${data.liveIcon}"
         alt="See Live Project"
-        width="26"
-        height="26"
+        width="20"
+        height="20"
       /></button
   ></a>
   <a href="${data.sourceLink}">
@@ -66,8 +66,8 @@ myModal.innerHTML = `<div class="modal-content">
       <img
         src="${data.githubIcon}"
         alt="See Source Code"
-        width="28"
-        height="28"
+        width="20"
+        height="20"
       /></button
   ></a>
 </div>
