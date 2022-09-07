@@ -16,20 +16,12 @@ const data = [
   {
     id: 1,
     name: "Keeping track of hundreds of components",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     imageDesktop: "images/desktop-image-portfolio.png",
     githubIcon: "images/icongithub.svg",
     liveIcon: "images/icon-export.svg",
     technologiesMobile: ["Ruby on Rails", "CSS", "JavaScript"],
-    technologiesDesktop: [
-      "CodeKit",
-      "GitHub",
-      "JavaScript",
-      "Bootstrap",
-      "Terminal",
-      "Codepen",
-    ],
+    technologiesDesktop: [ "CodeKit", "GitHub", "JavaScript", "Bootstrap", "Terminal", "Codepen"],
     sourceLink: "https://github.com/MohamedHNoor/mobile-firs-project1",
     liveLink: "https://mohamedhnoor.github.io/Portfolio-project1/",
   },
