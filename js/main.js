@@ -17,6 +17,8 @@ const data = {
   description:
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
   imageDesktop: "images/desktop-image-portfolio.png",
+  githubIcon: "images/icongithub.svg",
+  liveIcon: "images/icon-export.svg",
   technologiesMobile: ["Ruby on Rails", "CSS", "JavaScript"],
   technologiesDesktop: [
     "CodeKit",
@@ -52,7 +54,7 @@ myModal.innerHTML = `<div class="modal-content">
     <button type="submit" class="project-view-btn">
       <span> See Live</span>
       <img
-        src="../images/icon-export.svg"
+        src="${data.liveIcon}"
         alt="See Live Project"
         width="26"
         height="26"
@@ -62,7 +64,7 @@ myModal.innerHTML = `<div class="modal-content">
     <button type="submit" class="project-view-btn">
       <span>See Source</span>
       <img
-        src="../images/icongithub.svg"
+        src="${data.githubIcon}"
         alt="See Source Code"
         width="28"
         height="28"
@@ -72,25 +74,21 @@ myModal.innerHTML = `<div class="modal-content">
 </div>
 `;
 
-// Get the button that opens the modal
-const btn = document.getElementById("myBtn");
+function viewProjectDetails() {
+  myModal.style.display = "block";
+}
 
 // Get the <span> element that closes the modal
 const span = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal
-btn.onclick = function () {
-  myModal.style.display = "block";
-};
-
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
-  modal.style.display = "none";
+  myModal.style.display = "none";
 };
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
-  if (event.target === modal) {
-    modal.style.display = "none";
+  if (event.target === myModal) {
+    myModal.style.display = "none";
   }
 };
