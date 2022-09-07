@@ -68,7 +68,7 @@
 #mobile-ul {
   display: flex;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   gap: 8px;
   height: 32px;
   justify-content: flex-start;
