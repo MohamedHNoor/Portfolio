@@ -685,6 +685,9 @@ textarea {
     align-items: flex-start;
     width: 80%;
     height: 70%;
+    background: url(../images/Contact.png);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .titleAndForm-container {
@@ -754,13 +757,7 @@ textarea {
   .form-bg-img {
     margin-bottom: 8rem;
   }
-
-  .form-section {
-    background: url(../images/Contact.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
+  
   .footer-icons {
     width: 100%;
     display: flex;
