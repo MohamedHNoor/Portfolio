@@ -4,7 +4,6 @@ function lowercaseEmail(input) {
   return input === String(input).toLowerCase();
 }
 form.addEventListener('submit', (event) => {
-  event.preventDefault();
   // get email value fromm form
   const userEmail = form.elements['user-email'].value;
 
@@ -19,5 +18,6 @@ form.addEventListener('submit', (event) => {
     form.submit();
   } else {
     small.innerHTML = 'Please enter a correct email address format';
+    event.preventDefault();
   }
 });
