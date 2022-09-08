@@ -722,10 +722,8 @@ textarea {
   }
 
   .form input {
-    width: 684px;
-    height: 48px;
+    width: 100%;
     padding: 0.5rem 1rem;
-    margin: 0.5rem;
     background: #fff;
     border: 1px solid #d0d9d4;
     font-size: 1.5rem;
@@ -733,10 +731,17 @@ textarea {
     border-radius: 4px;
     font-family: "Inter", sans-serif;
   }
+  
+  input label {
+    margin: 0.5rem;
+  }
+
+  .error {
+    color: red;
+  }
 
   .form textarea {
-    width: 684px;
-    height: 9rem;
+    width: 100%;
     padding: 1rem 1rem;
     margin: 0.25rem;
     gap: 1.5rem;
