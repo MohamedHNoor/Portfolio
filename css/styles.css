@@ -405,16 +405,11 @@ button:enabled {
   align-content: center;
   justify-content: center;
   margin: 0 auto;
-  background-position-y: 100%;
+  background: url(../images/Contact.png);
   background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: 100%;
 }
-
-/* .form-section > img {
-  position: absolute;
-  top: 752%;
-  right: -22px;
-  border: 0;
-} */
 
 .form-container form {
   display: flex;
@@ -479,13 +474,6 @@ textarea {
 
 .btn:hover {
   background: #008552;
-}
-
-.form-section {
-  background: url(../images/Contact.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position-y: 100%;
 }
 
 .form-section .icons {
