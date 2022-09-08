@@ -242,6 +242,7 @@
           action="https://formspree.io/f/xqkjapkj"
           method="post"
           class="form"
+          id="projectForm"
         >
           <input
             type="text"
@@ -251,6 +252,7 @@
             required
             placeholder="Full name"
           />
+          <small id="small-error"></small>
           <input
             type="email"
             name="user-email"
@@ -265,7 +267,7 @@
             cols="30"
             rows="10"
           ></textarea>
-          <button type="submit" class="btn desktop">Get in touch</button>
+          <button id="submit" type="submit" class="btn desktop">Get in touch</button>
         </form>
       </div>
       <img src="images/Contact.png" alt="contact form background images" />
@@ -301,5 +303,6 @@
       <a class="my-email" href="#">myemailhere@gmail.com</a>
     </footer>
     <script src="./js/main.js"></script>
+    <script src="./js/form.js"></script>
   </body>
 </html>
