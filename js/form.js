@@ -16,6 +16,7 @@ form.addEventListener('submit', (event) => {
 
   if (emailLowercase) {
     small.innerHTML = '';
+    form.submit();
   } else {
     small.innerHTML = 'Please enter a correct email address format';
   }
