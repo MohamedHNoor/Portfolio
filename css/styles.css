@@ -405,13 +405,10 @@ button:enabled {
   align-content: center;
   justify-content: center;
   margin: 0 auto;
-}
-
-.form-bg-img1 {
-  width: 17%;
-  position: absolute;
-  right: 2px;
-  top: 6547px;
+  background: url(../images/Contact.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: 100%;
 }
 
 .form-container form {
@@ -448,6 +445,15 @@ input[type="email"] {
   padding: 10px;
 }
 
+#projectForm > label:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+}
+
+.error {
+  color: red;
+}
+
 textarea {
   width: 327px;
   height: 114px;
@@ -468,10 +474,6 @@ textarea {
 
 .btn:hover {
   background: #008552;
-}
-
-.form-section > img {
-  margin-top: -135%;
 }
 
 .form-section .icons {
@@ -537,13 +539,6 @@ textarea {
     color: #172b4d;
     gap: 40px;
     margin: 0 auto;
-  }
-
-  .container {
-    width: 90%;
-    padding: 1rem;
-    margin: 0 auto;
-    background: none;
   }
 
   .headline {
@@ -690,6 +685,9 @@ textarea {
     align-items: flex-start;
     width: 80%;
     height: 70%;
+    background: url(../images/Contact.png);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .titleAndForm-container {
@@ -719,13 +717,12 @@ textarea {
     gap: 1rem;
     z-index: 20;
     font-family: "Inter", sans-serif;
+    padding: 5px;
   }
 
   .form input {
-    width: 684px;
-    height: 48px;
+    width: 100%;
     padding: 0.5rem 1rem;
-    margin: 0.5rem;
     background: #fff;
     border: 1px solid #d0d9d4;
     font-size: 1.5rem;
@@ -735,8 +732,7 @@ textarea {
   }
 
   .form textarea {
-    width: 684px;
-    height: 9rem;
+    width: 100%;
     padding: 1rem 1rem;
     margin: 0.25rem;
     gap: 1.5rem;
@@ -749,12 +745,6 @@ textarea {
     font-family: "Inter", sans-serif;
   }
 
-  .form-section > img {
-    margin-top: -20%;
-    margin-left: 3rem;
-    width: 100%;
-  }
-
   .desktop {
     margin: 0;
     align-self: flex-start;
@@ -764,8 +754,8 @@ textarea {
     display: none;
   }
 
-  .form-bg-img1 {
-    display: none;
+  .form-bg-img {
+    margin-bottom: 8rem;
   }
 
   .footer-icons {
