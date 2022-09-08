@@ -308,7 +308,8 @@ button:enabled {
 /* about section */
 .title-card {
   text-align: center;
-  background: url(../images/about-me-mobile1.png) top right no-repeat, url(images/about-me-\ mobile.png);
+  background: url(../images/about-me-mobile1.png) top right no-repeat,
+    url(images/about-me-\ mobile.png);
 }
 
 .about-me-title {
@@ -405,14 +406,16 @@ button:enabled {
   align-content: center;
   justify-content: center;
   margin: 0 auto;
+  background-position-y: 100%;
+  background-size: contain;
 }
 
-.form-bg-img1 {
-  width: 17%;
+/* .form-section > img {
   position: absolute;
-  right: 2px;
-  top: 6547px;
-}
+  top: 752%;
+  right: -22px;
+  border: 0;
+} */
 
 .form-container form {
   display: flex;
@@ -448,6 +451,15 @@ input[type="email"] {
   padding: 10px;
 }
 
+#projectForm > label:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+}
+
+.error {
+  color: red;
+}
+
 textarea {
   width: 327px;
   height: 114px;
@@ -470,8 +482,11 @@ textarea {
   background: #008552;
 }
 
-.form-section > img {
-  margin-top: -135%;
+.form-section {
+  background: url(../images/Contact.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: 100%;
 }
 
 .form-section .icons {
@@ -537,13 +552,6 @@ textarea {
     color: #172b4d;
     gap: 40px;
     margin: 0 auto;
-  }
-
-  .container {
-    width: 90%;
-    padding: 1rem;
-    margin: 0 auto;
-    background: none;
   }
 
   .headline {
@@ -719,6 +727,7 @@ textarea {
     gap: 1rem;
     z-index: 20;
     font-family: "Inter", sans-serif;
+    padding: 5px;
   }
 
   .form input {
@@ -730,14 +739,6 @@ textarea {
     font-weight: 400;
     border-radius: 4px;
     font-family: "Inter", sans-serif;
-  }
-  
-  input label {
-    margin: 0.5rem;
-  }
-
-  .error {
-    color: red;
   }
 
   .form textarea {
@@ -754,12 +755,6 @@ textarea {
     font-family: "Inter", sans-serif;
   }
 
-  .form-section > img {
-    margin-top: -20%;
-    margin-left: 3rem;
-    width: 100%;
-  }
-
   .desktop {
     margin: 0;
     align-self: flex-start;
@@ -769,8 +764,14 @@ textarea {
     display: none;
   }
 
-  .form-bg-img1 {
-    display: none;
+  .form-bg-img {
+    margin-bottom: 8rem;
+  }
+
+  .form-section {
+    background: url(../images/Contact.png);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .footer-icons {
