@@ -246,6 +246,7 @@
         >
         <label for="user-name">
           <input
+          onchange="setLocalStorage()"
           type="text"
           maxlength="30"
           name="name"
@@ -256,6 +257,7 @@
         </label>
           <label for="user-email">
             <input
+            onchange="setLocalStorage()"
             type="email"
             name="user-email"
             id="user-email"
@@ -266,6 +268,7 @@
           </label>
           <label for="user-text">
             <textarea
+            onchange="setLocalStorage()"
             placeholder="Text here..."
             name="user-text"
             id="user-text"
