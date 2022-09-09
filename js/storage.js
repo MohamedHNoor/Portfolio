@@ -12,7 +12,6 @@ function setLocalStorage() {
   const inputName = document.getElementById('user-name').value;
   const inputEmail = document.getElementById('user-email').value;
   const inputMessage = document.getElementById('user-text').value;
-
   const visitors = { inputName, inputEmail, inputMessage };
   localStorage.setItem('visitors', JSON.stringify(visitors));
   storageData();
