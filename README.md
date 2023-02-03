@@ -23,7 +23,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### live Demo:
 
-- https://mohamedhnoor.github.io/Portfolio-project1/
+- https://mohamedhnoor.github.io/Portfolio/
 
 ## Authors
 
